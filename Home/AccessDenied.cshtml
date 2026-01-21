@@ -1,0 +1,49 @@
+﻿@{
+    ViewBag.Title = "Access Denied";
+    Layout = null; // Prevents the use of the layout
+}
+
+<style>
+    body {
+        background-color: #f8f9fa; /* Light background */
+        color: #343a40; /* Dark text color */
+        font-family: 'Arial', sans-serif;
+        text-align: center;
+        padding: 50px;
+    }
+
+    h2 {
+        font-size: 3em;
+        color: #ff4757; /* Bright red color for emphasis */
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    p {
+        font-size: 1.5em;
+        margin-top: 20px;
+        color: #495057; /* Slightly darker text */
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    }
+
+    .back-button {
+        margin-top: 30px;
+        padding: 10px 20px;
+        font-size: 1.2em;
+        color: #fff;
+        background-color: #ff4757; /* Red button */
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+        .back-button:hover {
+            background-color: #ff6b81; /* Lighter red on hover */
+        }
+</style>
+
+<h2>Access Denied!</h2>
+<p>🚫 You have ventured into forbidden territory! 🚫</p>
+<p>Sorry, you are not allowed to access this page. Only staff/admin can log in.</p>
+
+<a href="@Url.Action("Logout", "Home")" class="back-button">Return to Safety</a>

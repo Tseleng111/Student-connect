@@ -1,0 +1,24 @@
+# Build folders
+bin/
+obj/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# IDEs
+.vscode/
+*.vs/
+.idea/
+
+# ASP.NET Core sensitive files
+appsettings.Development.json
+.env
+
+# Logs
+*.log
+
+# Others
+*.db

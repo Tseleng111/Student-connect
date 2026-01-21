@@ -1,0 +1,105 @@
+﻿@model FirebaseAuth.Models.LoginModel
+
+@{
+    ViewData["Title"] = "Student Connect - Dashboard";
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <link href="~/css/cut-theme.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: var(--cut-light-gray);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <div class="cut-header">
+        <div class="cut-header-container">
+            <div class="cut-logo-section">
+                <img src="~/images/cut-logo.png" alt="CUT Logo" class="cut-logo" />
+                <div class="cut-header-text">
+                    <h1>Student Connect+</h1>
+                    <p style="font-size: 1.4rem; margin-top: 10px; font-weight: 500; color: white;">Welcome, @ViewBag.UserName!</p>
+                </div>
+            </div>
+            
+            <a asp-action="LogOut" asp-controller="Home"
+               style="font-size: 18px; padding: 10px 15px; display: inline-flex; align-items: center; gap: 6px; color: white; border-radius: 6px; text-decoration: none; margin-left: 12px;">
+                <span class="material-icons" style="vertical-align: middle; margin-right: 6px; font-size: 24px;">logout</span>
+                Logout
+            </a>
+            </div>
+        </div>
+    
+
+    <!-- Hero Section -->
+    <div class="cut-hero" style="background-image: url('/images/cut-campus-entrance.jpg');">
+        <div class="cut-hero-content">
+            <h2>Student Portal</h2>
+            <p>Access all your student services in one place</p>
+        </div>
+    </div>
+
+    <!-- Dashboard Grid -->
+    <div class="cut-container">
+        <div class="cut-dashboard-grid">
+            <!-- Assessments -->
+            <a href="#" class="cut-dashboard-card">
+                <span class="material-icons" style="font-size: 80px; color: var(--cut-blue); margin-bottom: 1rem;">assignment</span>
+                <h4>Assessments</h4>
+                <p>View your grades and results</p>
+            </a>
+
+            <!-- Timetables -->
+            <a href="#" class="cut-dashboard-card">
+                <span class="material-icons" style="font-size: 80px; color: var(--cut-blue); margin-bottom: 1rem;">calendar_today</span>
+                <h4>Timetables</h4>
+                <p>View your class schedule</p>
+            </a>
+
+            <!-- Account -->
+            <a href="#" class="cut-dashboard-card">
+                <span class="material-icons" style="font-size: 80px; color: var(--cut-blue); margin-bottom: 1rem;">account_circle</span>
+                <h4>Account</h4>
+                <p>Manage your student account</p>
+            </a>
+
+            <!-- Learning -->
+            <a href="#" class="cut-dashboard-card">
+                <span class="material-icons" style="font-size: 80px; color: var(--cut-blue); margin-bottom: 1rem;">school</span>
+                <h4>Learning</h4>
+                <p>Access course materials</p>
+            </a>
+            <!-- Upload Photo -->
+            <a asp-action="UploadPhoto" asp-controller="Home" class="cut-dashboard-card">
+                <span class="material-icons" style="font-size: 80px; color: var(--cut-blue); margin-bottom: 1rem;">photo_camera</span>
+                <h4>Upload Photo</h4>
+                <p>Submit your student card photo</p>
+            </a>
+
+            <!-- Track Status -->
+            <a href="/Student/TrackStatus" class="cut-dashboard-card">
+                <span class="material-icons" style="font-size: 80px; color: var(--cut-blue); margin-bottom: 1rem;">track_changes</span>
+                <h4>Track Status</h4>
+                <p>Check your card status</p>
+            </a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="cut-footer">
+        <p>&copy; @DateTime.Now.Year Central University of Technology</p>
+        <p>Bloemfontein Campus | Student Number: @ViewBag.StudentNumber</p>
+    </div>
+</body>
+</html>

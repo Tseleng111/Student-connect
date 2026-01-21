@@ -1,0 +1,281 @@
+﻿@{
+    ViewData["Title"] = "Track Status - Student Connect";
+    var student = ViewBag.Student as FirebaseAuth.Models.StudentPhoto;
+    var referenceNumber = ViewBag.ReferenceNumber as string;
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <link href="~/css/cut-theme.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: var(--cut-light-gray);
+        }
+
+        .status-container {
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+
+        .student-info-card {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            padding: 30px;
+            background: linear-gradient(135deg, rgba(0, 67, 120, 0.05) 0%, rgba(0, 92, 143, 0.05) 100%);
+            border-radius: 12px;
+            border: 2px solid var(--cut-blue);
+            margin-bottom: 40px;
+        }
+
+        .student-photo {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 12px;
+            border: 4px solid var(--cut-blue);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .student-details {
+            flex: 1;
+        }
+
+        .detail-row {
+            margin-bottom: 15px;
+        }
+
+        .detail-row strong {
+            color: var(--cut-navy);
+            display: inline-block;
+            width: 150px;
+        }
+
+        .detail-row span {
+            color: var(--cut-gray);
+            font-size: 1.1rem;
+        }
+
+        .reference-number {
+            text-align: center;
+            padding: 20px;
+            background: var(--cut-blue);
+            color: white;
+            border-radius: 8px;
+            margin: 30px 0;
+        }
+
+        .reference-number strong {
+            font-size: 1.2rem;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .reference-number span {
+            font-size: 1.8rem;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        .status-timeline {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 40px 0;
+            padding: 30px;
+            background: #f8f9fa;
+            border-radius: 12px;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .status-step {
+            text-align: center;
+            flex: 1;
+            min-width: 150px;
+        }
+
+        .status-icon {
+            width: 100px;
+            height: 100px;
+            margin: 0 auto 15px;
+            background: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .status-icon .material-icons {
+            font-size: 50px;
+            color: var(--cut-blue);
+        }
+
+        .status-label {
+            font-weight: 600;
+            color: var(--cut-navy);
+            margin-top: 10px;
+        }
+
+        .help-section {
+            background: #e3f2fd;
+            padding: 30px;
+            border-radius: 12px;
+            border-left: 4px solid var(--cut-blue);
+            margin-top: 40px;
+        }
+
+        .help-section h4 {
+            color: var(--cut-navy);
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+
+        .help-section p {
+            color: var(--cut-gray);
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <div class="cut-header">
+        <div class="cut-header-container">
+            <div class="cut-logo-section">
+                <img src="~/images/cut-logo.png" alt="CUT Logo" class="cut-logo" />
+                <div class="cut-header-text">
+                    <h1>Student Connect+</h1>
+                    <p style="font-size: 1.4rem; margin-top: 10px; font-weight: 500; color: white;">Card Status Tracking</p>
+                </div>
+            </div>
+            <div class="cut-nav">
+                <a asp-action="StudentConnect" asp-controller="Home">
+                    <span class="material-icons" style="vertical-align: middle; margin-right: 4px;">arrow_back</span>
+                    Back to Dashboard
+                </a>
+                <a asp-action="LogOut" asp-controller="Home">
+                    <span class="material-icons" style="vertical-align: middle; margin-right: 4px;">logout</span>
+                    Logout
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="cut-container" style="padding-top: 30px;">
+        <div class="status-container">
+            <h3 style="color: var(--cut-navy); margin-bottom: 30px;">
+                <span class="material-icons" style="vertical-align: middle; margin-right: 10px;">track_changes</span>
+                Student Card Status
+            </h3>
+
+            <!-- Student Info -->
+            <div class="student-info-card">
+                @if (student != null)
+                {
+                    <img src="@student.PhotoUrl" alt="Student Photo" class="student-photo" />
+                    <div class="student-details">
+                        <div class="detail-row">
+                            <strong>Name:</strong>
+                            <span>@student.FullName</span>
+                        </div>
+                        <div class="detail-row">
+                            <strong>Student Number:</strong>
+                            <span>@student.StudentNumber</span>
+                        </div>
+                        <div class="detail-row">
+                            <strong>Course:</strong>
+                            <span>@student.Course</span>
+                        </div>
+                        <div class="detail-row">
+                            <strong>Current Status:</strong>
+                            <span style="color: var(--cut-blue); font-weight: 600;">@(student.Status ?? "Photo Submitted")</span>
+                        </div>
+                    </div>
+                }
+            </div>
+
+            <!-- Reference Number -->
+            @if (!string.IsNullOrEmpty(referenceNumber))
+            {
+                <div class="reference-number">
+                    <strong>Your Reference Number</strong>
+                    <span>@referenceNumber</span>
+                </div>
+            }
+
+            <!-- Status Timeline -->
+            <div class="status-timeline">
+                <div class="status-step">
+                    <div class="status-icon">
+                        <span class="material-icons">cloud_upload</span>
+                    </div>
+                    <div class="status-label">Photo Uploaded</div>
+                </div>
+
+                <div class="status-step">
+                    <div class="status-icon">
+                        <span class="material-icons">rate_review</span>
+                    </div>
+                    <div class="status-label">Under Review</div>
+                </div>
+
+                <div class="status-step">
+                    <div class="status-icon">
+                        <span class="material-icons">print</span>
+                    </div>
+                    <div class="status-label">Card Production</div>
+                </div>
+
+                <div class="status-step">
+                    <div class="status-icon">
+                        <span class="material-icons">check_circle</span>
+                    </div>
+                    <div class="status-label">Ready for Collection</div>
+                </div>
+            </div>
+
+            <!-- Help Section -->
+            <div class="help-section">
+                <h4>
+                    <span class="material-icons" style="vertical-align: middle; margin-right: 8px;">help</span>
+                    Need Help?
+                </h4>
+                <p>
+                    If you are experiencing issues or have questions about your submission, please contact the student support center or send an email to <strong>support@cut.ac.za</strong>.
+                </p>
+            </div>
+
+            <!-- Back Button -->
+            <
+                <div style="text-align: center; margin-top: 40px;">
+                <a asp-action="StudentConnect" asp-controller="Home class=" cut-btn cut-btn-primary"
+                   style="font-size: 18px; padding: 10px 15px; display: inline-flex; align-items: center; gap: 6px;  color: white; border-radius: 6px; text-decoration: none;">
+                    <span class="material-icons" style="vertical-align: middle; margin-right: 6px; font-size: 24px;">home</span>
+                    Back to DashBoard
+                </a>
+
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="cut-footer">
+        <p>&copy; @DateTime.Now.Year Central University of Technology</p>
+        <p>Bloemfontein Campus | Student Connect System</p>
+    </div>
+</body>
+</html>

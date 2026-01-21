@@ -1,0 +1,393 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Thabzi\\Downloads\\StudentConnect\\StudentConnect\\FirebaseLogin\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\FirebaseAuth.bundle.scp.css",
+      "PackagePath": "staticwebassets\\FirebaseAuth.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\Thabzi\\Downloads\\StudentConnect\\StudentConnect\\FirebaseLogin\\wwwroot\\css\\cut-theme.css",
+      "PackagePath": "staticwebassets\\css\\cut-theme.css"
+    },
+    {
+      "Id": "C:\\Users\\Thabzi\\Downloads\\StudentConnect\\StudentConnect\\FirebaseLogin\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\Thabzi\\Downloads\\StudentConnect\\StudentConnect\\FirebaseLogin\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\Thabzi\\Downloads\\StudentConnect\\StudentConnect\\FirebaseLogin\\wwwroot\\images\\Account.png",
+      "PackagePath": "staticwebassets\\images\\Account.png"
+    },
+    {
+      "Id": "C:\\Users\\Thabzi\\Downloads\\StudentConnect\\StudentConnect\\FirebaseLogin\\wwwroot\\images\\Arrow.png",
+      "PackagePath": "staticwebassets\\images\\Arrow.png"
+    },
+    {
+      "Id": "C:\\Users\\Thabzi\\Downloads\\StudentConnect\\StudentConnect\\FirebaseLogin\\wwwroot\\images\\AssessmentPic.png",
+      "PackagePath": "staticwebassets\\images\\AssessmentPic.png"
+    },
+    {
+      "Id": "C:\\Users\\Thabzi\\Downloads\\StudentConnect\\StudentConnect\\FirebaseLogin\\wwwroot\\images\\Learming.png",
+      "PackagePath": "staticwebassets\\images\\Learming.png"
+    },
+    {
+      "Id": "C:\\Users\\Thabzi\\Downloads\\StudentConnect\\StudentConnect\\FirebaseLogin\\wwwroot\\images\\Timetable.png",
+      "PackagePath": "staticwebassets\\images\\Timetable.png"
+    },
+    {
+      "Id": "C:\\Users\\Thabzi\\Downloads\\StudentConnect\\StudentConnect\\FirebaseLogin\\wwwroot\\images\\Upload.png",
+      "PackagePath": "staticwebassets\\images\\Upload.png"
+    },
+    {
+      "Id": "C:\\Users\\Thabzi\\Downloads\\StudentConnect\\StudentConnect\\FirebaseLogin\\wwwroot\\images\\cut-campus-entrance.jpg",
+      "PackagePath": "staticwebassets\\images\\cut-campus-entrance.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Thabzi\\Downloads\\StudentConnect\\StudentConnect\\FirebaseLogin\\wwwroot\\images\\cut-logo.png",
+      "PackagePath": "staticwebassets\\images\\cut-logo.png"
+    },
+    {
+      "Id": "C:\\Users\\Thabzi\\Downloads\\StudentConnect\\StudentConnect\\FirebaseLogin\\wwwroot\\images\\cut-mahabane-building.jpg",
+      "PackagePath": "staticwebassets\\images\\cut-mahabane-building.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Thabzi\\Downloads\\StudentConnect\\StudentConnect\\FirebaseLogin\\wwwroot\\images\\pic.png",
+      "PackagePath": "staticwebassets\\images\\pic.png"
+    },
+    {
+      "Id": "C:\\Users\\Thabzi\\Downloads\\StudentConnect\\StudentConnect\\FirebaseLogin\\wwwroot\\images\\right.png",
+      "PackagePath": "staticwebassets\\images\\right.png"
+    },
+    {
+      "Id": "C:\\Users\\Thabzi\\Downloads\\StudentConnect\\StudentConnect\\FirebaseLogin\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\Thabzi\\Downloads\\StudentConnect\\StudentConnect\\FirebaseLogin\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\Thabzi\\Downloads\\StudentConnect\\StudentConnect\\FirebaseLogin\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\Thabzi\\Downloads\\StudentConnect\\StudentConnect\\FirebaseLogin\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Thabzi\\Downloads\\StudentConnect\\StudentConnect\\FirebaseLogin\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Thabzi\\Downloads\\StudentConnect\\StudentConnect\\FirebaseLogin\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Thabzi\\Downloads\\StudentConnect\\StudentConnect\\FirebaseLogin\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Thabzi\\Downloads\\StudentConnect\\StudentConnect\\FirebaseLogin\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Thabzi\\Downloads\\StudentConnect\\StudentConnect\\FirebaseLogin\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Thabzi\\Downloads\\StudentConnect\\StudentConnect\\FirebaseLogin\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Thabzi\\Downloads\\StudentConnect\\StudentConnect\\FirebaseLogin\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\Thabzi\\Downloads\\StudentConnect\\StudentConnect\\FirebaseLogin\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Thabzi\\Downloads\\StudentConnect\\StudentConnect\\FirebaseLogin\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Thabzi\\Downloads\\StudentConnect\\StudentConnect\\FirebaseLogin\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Thabzi\\Downloads\\StudentConnect\\StudentConnect\\FirebaseLogin\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Thabzi\\Downloads\\StudentConnect\\StudentConnect\\FirebaseLogin\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Thabzi\\Downloads\\StudentConnect\\StudentConnect\\FirebaseLogin\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Thabzi\\Downloads\\StudentConnect\\StudentConnect\\FirebaseLogin\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Thabzi\\Downloads\\StudentConnect\\StudentConnect\\FirebaseLogin\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\Thabzi\\Downloads\\StudentConnect\\StudentConnect\\FirebaseLogin\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Thabzi\\Downloads\\StudentConnect\\StudentConnect\\FirebaseLogin\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Thabzi\\Downloads\\StudentConnect\\StudentConnect\\FirebaseLogin\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Thabzi\\Downloads\\StudentConnect\\StudentConnect\\FirebaseLogin\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Thabzi\\Downloads\\StudentConnect\\StudentConnect\\FirebaseLogin\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Thabzi\\Downloads\\StudentConnect\\StudentConnect\\FirebaseLogin\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Thabzi\\Downloads\\StudentConnect\\StudentConnect\\FirebaseLogin\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Thabzi\\Downloads\\StudentConnect\\StudentConnect\\FirebaseLogin\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\Thabzi\\Downloads\\StudentConnect\\StudentConnect\\FirebaseLogin\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Thabzi\\Downloads\\StudentConnect\\StudentConnect\\FirebaseLogin\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Thabzi\\Downloads\\StudentConnect\\StudentConnect\\FirebaseLogin\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Thabzi\\Downloads\\StudentConnect\\StudentConnect\\FirebaseLogin\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Thabzi\\Downloads\\StudentConnect\\StudentConnect\\FirebaseLogin\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Thabzi\\Downloads\\StudentConnect\\StudentConnect\\FirebaseLogin\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Thabzi\\Downloads\\StudentConnect\\StudentConnect\\FirebaseLogin\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Thabzi\\Downloads\\StudentConnect\\StudentConnect\\FirebaseLogin\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\Thabzi\\Downloads\\StudentConnect\\StudentConnect\\FirebaseLogin\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Thabzi\\Downloads\\StudentConnect\\StudentConnect\\FirebaseLogin\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Thabzi\\Downloads\\StudentConnect\\StudentConnect\\FirebaseLogin\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Thabzi\\Downloads\\StudentConnect\\StudentConnect\\FirebaseLogin\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\Thabzi\\Downloads\\StudentConnect\\StudentConnect\\FirebaseLogin\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Thabzi\\Downloads\\StudentConnect\\StudentConnect\\FirebaseLogin\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Thabzi\\Downloads\\StudentConnect\\StudentConnect\\FirebaseLogin\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Thabzi\\Downloads\\StudentConnect\\StudentConnect\\FirebaseLogin\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\Thabzi\\Downloads\\StudentConnect\\StudentConnect\\FirebaseLogin\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Thabzi\\Downloads\\StudentConnect\\StudentConnect\\FirebaseLogin\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Thabzi\\Downloads\\StudentConnect\\StudentConnect\\FirebaseLogin\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Thabzi\\Downloads\\StudentConnect\\StudentConnect\\FirebaseLogin\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\Thabzi\\Downloads\\StudentConnect\\StudentConnect\\FirebaseLogin\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\Thabzi\\Downloads\\StudentConnect\\StudentConnect\\FirebaseLogin\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Thabzi\\Downloads\\StudentConnect\\StudentConnect\\FirebaseLogin\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\Thabzi\\Downloads\\StudentConnect\\StudentConnect\\FirebaseLogin\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\Thabzi\\Downloads\\StudentConnect\\StudentConnect\\FirebaseLogin\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Thabzi\\Downloads\\StudentConnect\\StudentConnect\\FirebaseLogin\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\Thabzi\\Downloads\\StudentConnect\\StudentConnect\\FirebaseLogin\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Thabzi\\Downloads\\StudentConnect\\StudentConnect\\FirebaseLogin\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\Thabzi\\Downloads\\StudentConnect\\StudentConnect\\FirebaseLogin\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\Thabzi\\Downloads\\StudentConnect\\StudentConnect\\FirebaseLogin\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Thabzi\\Downloads\\StudentConnect\\StudentConnect\\FirebaseLogin\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\Thabzi\\Downloads\\StudentConnect\\StudentConnect\\FirebaseLogin\\wwwroot\\uploads\\photos\\OuATo2UMFehmtWbF6SSKxb5HD6h2_20250617_214219.png",
+      "PackagePath": "staticwebassets\\uploads\\photos\\OuATo2UMFehmtWbF6SSKxb5HD6h2_20250617_214219.png"
+    },
+    {
+      "Id": "C:\\Users\\Thabzi\\Downloads\\StudentConnect\\StudentConnect\\FirebaseLogin\\wwwroot\\uploads\\photos\\OuATo2UMFehmtWbF6SSKxb5HD6h2_20250705_135633.jpg",
+      "PackagePath": "staticwebassets\\uploads\\photos\\OuATo2UMFehmtWbF6SSKxb5HD6h2_20250705_135633.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Thabzi\\Downloads\\StudentConnect\\StudentConnect\\FirebaseLogin\\wwwroot\\uploads\\photos\\OuATo2UMFehmtWbF6SSKxb5HD6h2_20250705_142211.jpg",
+      "PackagePath": "staticwebassets\\uploads\\photos\\OuATo2UMFehmtWbF6SSKxb5HD6h2_20250705_142211.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Thabzi\\Downloads\\StudentConnect\\StudentConnect\\FirebaseLogin\\wwwroot\\uploads\\photos\\OuATo2UMFehmtWbF6SSKxb5HD6h2_20250814_142037.jpeg",
+      "PackagePath": "staticwebassets\\uploads\\photos\\OuATo2UMFehmtWbF6SSKxb5HD6h2_20250814_142037.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Thabzi\\Downloads\\StudentConnect\\StudentConnect\\FirebaseLogin\\wwwroot\\uploads\\photos\\OuATo2UMFehmtWbF6SSKxb5HD6h2_20250814_142228.jpeg",
+      "PackagePath": "staticwebassets\\uploads\\photos\\OuATo2UMFehmtWbF6SSKxb5HD6h2_20250814_142228.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Thabzi\\Downloads\\StudentConnect\\StudentConnect\\FirebaseLogin\\wwwroot\\uploads\\photos\\OuATo2UMFehmtWbF6SSKxb5HD6h2_20250920_184418.png",
+      "PackagePath": "staticwebassets\\uploads\\photos\\OuATo2UMFehmtWbF6SSKxb5HD6h2_20250920_184418.png"
+    },
+    {
+      "Id": "C:\\Users\\Thabzi\\Downloads\\StudentConnect\\StudentConnect\\FirebaseLogin\\wwwroot\\uploads\\photos\\OuATo2UMFehmtWbF6SSKxb5HD6h2_20250920_191139.png",
+      "PackagePath": "staticwebassets\\uploads\\photos\\OuATo2UMFehmtWbF6SSKxb5HD6h2_20250920_191139.png"
+    },
+    {
+      "Id": "C:\\Users\\Thabzi\\Downloads\\StudentConnect\\StudentConnect\\FirebaseLogin\\wwwroot\\uploads\\photos\\OuATo2UMFehmtWbF6SSKxb5HD6h2_20250920_191556.png",
+      "PackagePath": "staticwebassets\\uploads\\photos\\OuATo2UMFehmtWbF6SSKxb5HD6h2_20250920_191556.png"
+    },
+    {
+      "Id": "C:\\Users\\Thabzi\\Downloads\\StudentConnect\\StudentConnect\\FirebaseLogin\\wwwroot\\uploads\\photos\\OuATo2UMFehmtWbF6SSKxb5HD6h2_20250920_191957.png",
+      "PackagePath": "staticwebassets\\uploads\\photos\\OuATo2UMFehmtWbF6SSKxb5HD6h2_20250920_191957.png"
+    },
+    {
+      "Id": "C:\\Users\\Thabzi\\Downloads\\StudentConnect\\StudentConnect\\FirebaseLogin\\wwwroot\\uploads\\photos\\OuATo2UMFehmtWbF6SSKxb5HD6h2_20250920_192013.png",
+      "PackagePath": "staticwebassets\\uploads\\photos\\OuATo2UMFehmtWbF6SSKxb5HD6h2_20250920_192013.png"
+    },
+    {
+      "Id": "C:\\Users\\Thabzi\\Downloads\\StudentConnect\\StudentConnect\\FirebaseLogin\\wwwroot\\uploads\\photos\\OuATo2UMFehmtWbF6SSKxb5HD6h2_20250920_192448.png",
+      "PackagePath": "staticwebassets\\uploads\\photos\\OuATo2UMFehmtWbF6SSKxb5HD6h2_20250920_192448.png"
+    },
+    {
+      "Id": "C:\\Users\\Thabzi\\Downloads\\StudentConnect\\StudentConnect\\FirebaseLogin\\wwwroot\\uploads\\photos\\OuATo2UMFehmtWbF6SSKxb5HD6h2_20250920_192700.png",
+      "PackagePath": "staticwebassets\\uploads\\photos\\OuATo2UMFehmtWbF6SSKxb5HD6h2_20250920_192700.png"
+    },
+    {
+      "Id": "C:\\Users\\Thabzi\\Downloads\\StudentConnect\\StudentConnect\\FirebaseLogin\\wwwroot\\uploads\\photos\\OuATo2UMFehmtWbF6SSKxb5HD6h2_20250920_193454.png",
+      "PackagePath": "staticwebassets\\uploads\\photos\\OuATo2UMFehmtWbF6SSKxb5HD6h2_20250920_193454.png"
+    },
+    {
+      "Id": "C:\\Users\\Thabzi\\Downloads\\StudentConnect\\StudentConnect\\FirebaseLogin\\wwwroot\\uploads\\photos\\OuATo2UMFehmtWbF6SSKxb5HD6h2_20250920_194218.png",
+      "PackagePath": "staticwebassets\\uploads\\photos\\OuATo2UMFehmtWbF6SSKxb5HD6h2_20250920_194218.png"
+    },
+    {
+      "Id": "C:\\Users\\Thabzi\\Downloads\\StudentConnect\\StudentConnect\\FirebaseLogin\\wwwroot\\uploads\\photos\\OuATo2UMFehmtWbF6SSKxb5HD6h2_20250920_195646.png",
+      "PackagePath": "staticwebassets\\uploads\\photos\\OuATo2UMFehmtWbF6SSKxb5HD6h2_20250920_195646.png"
+    },
+    {
+      "Id": "C:\\Users\\Thabzi\\Downloads\\StudentConnect\\StudentConnect\\FirebaseLogin\\wwwroot\\uploads\\photos\\OuATo2UMFehmtWbF6SSKxb5HD6h2_20250920_225814.png",
+      "PackagePath": "staticwebassets\\uploads\\photos\\OuATo2UMFehmtWbF6SSKxb5HD6h2_20250920_225814.png"
+    },
+    {
+      "Id": "C:\\Users\\Thabzi\\Downloads\\StudentConnect\\StudentConnect\\FirebaseLogin\\wwwroot\\uploads\\photos\\OuATo2UMFehmtWbF6SSKxb5HD6h2_20250920_232317.png",
+      "PackagePath": "staticwebassets\\uploads\\photos\\OuATo2UMFehmtWbF6SSKxb5HD6h2_20250920_232317.png"
+    },
+    {
+      "Id": "C:\\Users\\Thabzi\\Downloads\\StudentConnect\\StudentConnect\\FirebaseLogin\\wwwroot\\uploads\\photos\\OuATo2UMFehmtWbF6SSKxb5HD6h2_20250921_000101.png",
+      "PackagePath": "staticwebassets\\uploads\\photos\\OuATo2UMFehmtWbF6SSKxb5HD6h2_20250921_000101.png"
+    },
+    {
+      "Id": "C:\\Users\\Thabzi\\Downloads\\StudentConnect\\StudentConnect\\FirebaseLogin\\wwwroot\\uploads\\photos\\OuATo2UMFehmtWbF6SSKxb5HD6h2_20250921_153232.png",
+      "PackagePath": "staticwebassets\\uploads\\photos\\OuATo2UMFehmtWbF6SSKxb5HD6h2_20250921_153232.png"
+    },
+    {
+      "Id": "C:\\Users\\Thabzi\\Downloads\\StudentConnect\\StudentConnect\\FirebaseLogin\\wwwroot\\uploads\\photos\\OuATo2UMFehmtWbF6SSKxb5HD6h2_20250921_174309.png",
+      "PackagePath": "staticwebassets\\uploads\\photos\\OuATo2UMFehmtWbF6SSKxb5HD6h2_20250921_174309.png"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.FirebaseAuth.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.FirebaseAuth.props",
+      "PackagePath": "build\\FirebaseAuth.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.FirebaseAuth.props",
+      "PackagePath": "buildMultiTargeting\\FirebaseAuth.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.FirebaseAuth.props",
+      "PackagePath": "buildTransitive\\FirebaseAuth.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

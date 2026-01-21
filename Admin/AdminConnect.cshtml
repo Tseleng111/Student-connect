@@ -1,0 +1,265 @@
+﻿@model IEnumerable<FirebaseAuth.Models.StudentPhoto>
+
+@{
+    ViewBag.Title = "Student Card Issuance - Admin Portal";
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewBag.Title</title>
+    <link href="~/css/cut-theme.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+
+        /* CENTERED CONTAINER - LIKE UPDATE STATUS PAGE */
+        .cut-container {
+            max-width: 1100px !important;
+            width: 90% !important;
+            margin: 40px auto !important;
+            padding: 0 !important;
+        }
+
+        .cut-card-large {
+            max-width: 100% !important;
+            width: 100% !important;
+            margin: 0 !important;
+            padding: 30px !important;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+            .cut-card-large h3 {
+                color: #00567A;
+                margin: 0 0 10px 0;
+                font-size: 1.8rem;
+            }
+
+        .cut-table {
+            width: 100% !important;
+            border-collapse: collapse;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin-top: 20px;
+        }
+
+            .cut-table thead {
+                background-color: #00567A !important;
+                color: white !important;
+            }
+
+            .cut-table th {
+                padding: 12px !important;
+                text-align: left !important;
+                font-size: 0.95rem !important;
+                font-weight: 600 !important;
+                border: none !important;
+            }
+
+            .cut-table td {
+                padding: 10px !important;
+                border-bottom: 1px solid #ddd !important;
+                vertical-align: middle !important;
+            }
+
+            .cut-table tbody tr:hover td {
+                background-color: #f5f8ff !important;
+            }
+
+        .search-section {
+            background: transparent;
+            padding: 20px 0;
+            margin: 20px 0 30px 0;
+            border-radius: 0;
+            box-shadow: none;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .search-form {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+            .search-form label {
+                font-weight: 600;
+                color: #00567A;
+                white-space: nowrap;
+            }
+
+            .search-form input[type="text"] {
+                flex: 1;
+                min-width: 250px;
+                padding: 10px 15px;
+                border: 2px solid #ddd;
+                border-radius: 4px;
+                font-size: 1rem;
+            }
+
+                .search-form input[type="text"]:focus {
+                    outline: none;
+                    border-color: #005c8f;
+                }
+
+        .action-buttons {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+            .action-buttons form {
+                margin: 0;
+            }
+
+        .btn-small {
+            padding: 8px 16px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <div class="cut-header">
+        <div class="cut-header-container">
+            <div class="cut-logo-section">
+                <img src="~/images/cut-logo.png" alt="CUT Logo" class="cut-logo" />
+                <div class="cut-header-text">
+                    <h1>Student Connect+ Admin</h1>
+                    <p style="font-size: 1.4rem; margin-top: 10px; font-weight: 500; color:#F2F2F2;">Student Card Management System</p>
+                </div>
+            </div>
+            <div class="cut-nav">
+                <a asp-action="StatusUpdate" asp-controller="Admin"
+                   style="font-size: 18px; padding: 10px 15px; display: inline-flex; align-items: center; gap: 6px;  color: white; border-radius: 6px; text-decoration: none;">
+                    <span class="material-icons" style="vertical-align: middle; margin-right: 6px; font-size: 24px;">update</span>
+                    Update Status
+                </a>
+
+                <a asp-action="LogOut" asp-controller="Home"
+                   style="font-size: 18px; padding: 10px 15px; display: inline-flex; align-items: center; gap: 6px; color: white; border-radius: 6px; text-decoration: none; margin-left: 12px;">
+                    <span class="material-icons" style="vertical-align: middle; margin-right: 6px; font-size: 24px;">logout</span>
+                    Logout
+                </a>
+
+            
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="cut-container" style="padding-top: 30px;">
+        <div class="cut-card cut-card-large">
+            <h3>Student Photo Submissions</h3>
+            @if (ViewContext.RouteData.Values["action"].ToString() == "AdminConnect" && TempData["Message"] != null)
+{
+    <div class="alert alert-success" style="background-color: #d4edda; color: #155724; padding: 12px 20px; border-radius: 6px; margin-bottom: 20px;">
+        <span class="material-icons" style="vertical-align: middle; margin-right: 6px;">check_circle</span>
+        @TempData["Message"]
+    </div>
+
+    {
+        TempData.Remove("Message"); // prevent message from showing elsewhere
+    }
+}
+
+
+            <!-- Search Section -->
+            <div class="search-section">
+                <form method="get" asp-action="AdminConnect" class="search-form">
+                    <label for="studentNumber">Find by Student Number:</label>
+                    <input type="text" name="studentNumber" id="studentNumber" value="@ViewBag.StudentNumber" placeholder="Enter student number" />
+                    <button type="submit" class="cut-btn cut-btn-primary btn-small">
+                        <span class="material-icons" style="vertical-align: middle; font-size: 18px; margin-right: 4px;">search</span>
+                        Search
+                    </button>
+                    @if (!string.IsNullOrEmpty(ViewBag.StudentNumber))
+                    {
+                        <a href="@Url.Action("AdminConnect")" class="cut-btn cut-btn-primary btn-small" style="display: inline-flex; align-items: center; gap: 6px;">
+                            <span class="material-icons" style="vertical-align: middle; font-size: 18px; margin-right: 4px;">clear</span>
+                            Clear
+                        </a>
+                    }
+
+                </form>
+            </div>
+
+            <!-- Student Table -->
+            <table class="cut-table">
+                <thead>
+                    <tr>
+                        <th>Student Number</th>
+                        <th>Name</th>
+                        <th>Submission Date</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @if (Model != null && Model.Any())
+                    {
+                        foreach (var student in Model)
+                        {
+                            <tr>
+                                <td>@student.StudentNumber</td>
+                                <td>@(string.IsNullOrEmpty(student.FullName) ? "—" : student.FullName)</td>
+                                <td>@student.SubmissionDate.ToString("yyyy/MM/dd HH:mm")</td>
+                                <td>
+                                    <span style="padding: 4px 12px; background-color: #e3f2fd; color: #1976d2; border-radius: 12px; font-size: 0.85rem; font-weight: 500;">
+                                        @(string.IsNullOrEmpty(student.Status) ? "Submitted" : student.Status)
+                                    </span>
+                                </td>
+                                <td>
+                                    <div class="action-buttons">
+                                        <a asp-controller="Admin" asp-action="Details" asp-route-id="@student.Id" class="cut-btn cut-btn-primary btn-small">
+                                            <span class="material-icons" style="vertical-align: middle; font-size: 16px; margin-right: 4px;">visibility</span>
+                                            View Details
+                                        </a>
+
+                                        <form asp-controller="Admin" asp-action="SendStudentCardEmail" method="post" style="display:inline;">
+                                            <input type="hidden" name="studentNumber" value="@student.StudentNumber" />
+                                            <button type="submit" class="cut-btn cut-btn-primary btn-small">
+                                                <span class="material-icons" style="vertical-align: middle; font-size: 16px; margin-right: 4px;">mark_email_read</span>
+                                                Card Ready
+                                            </button>
+                                        </form>
+
+                                       
+                                    </div>
+                                </td>
+                            </tr>
+                        }
+                    }
+                    else
+                    {
+                        <tr>
+                            <td colspan="5" style="text-align: center; padding: 40px; color: var(--cut-gray);">
+                                <span class="material-icons" style="font-size: 48px; opacity: 0.3;">search_off</span>
+                                <p style="margin-top: 10px;">No student photos found.</p>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="cut-footer">
+        <p>&copy; @DateTime.Now.Year Central University of Technology</p>
+        <p>Bloemfontein Campus | Admin Portal</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,259 @@
+﻿@model FirebaseAuth.Models.StudentCardModel
+
+@{
+    ViewData["Title"] = "Student Details - Admin Portal";
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <link href="~/css/cut-theme.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: var(--cut-light-gray);
+        }
+
+        .student-card-preview {
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+
+        .preview-content {
+            display: flex;
+            align-items: flex-start;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        .photo-section img {
+            width: 300px;
+            height: 300px;
+            border: 5px solid var(--cut-blue);
+            border-radius: 12px;
+            object-fit: cover;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .photo-section .no-photo {
+            width: 300px;
+            height: 300px;
+            border-radius: 12px;
+            background-color: #f0f0f0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 5px solid #ccc;
+        }
+
+        .details-section {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .detail-item {
+            margin-bottom: 25px;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border-left: 4px solid var(--cut-blue);
+        }
+
+            .detail-item strong {
+                display: block;
+                color: var(--cut-navy);
+                font-size: 0.9rem;
+                margin-bottom: 8px;
+                text-transform: uppercase;
+                letter-spacing: 0.5px;
+            }
+
+            .detail-item span {
+                font-size: 1.2rem;
+                color: var(--cut-gray);
+            }
+
+        .email-list {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .email-item {
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .email-item-info {
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .email-buttons {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <div class="cut-header">
+        <div class="cut-header-container">
+            <div class="cut-logo-section">
+                <img src="~/images/cut-logo.png" alt="CUT Logo" class="cut-logo" />
+                <div class="cut-header-text">
+                    <h1>Student Connect+ Admin</h1>
+                    <p>Student Details & Card Management</p>
+                </div>
+            </div>
+            <div class="cut-nav">
+                <a asp-action="AdminConnect" asp-controller="Admin" style="font-size: 18px; padding: 10px 15px; display: inline-flex; align-items: center; gap: 6px;  color: white; border-radius: 6px; text-decoration: none;">
+                    <span class="material-icons" style="vertical-align: middle; margin-right: 6px; font-size: 24px;">arrow_back</span>
+                    Back to List
+                </a>
+
+                <a asp-action="LogOut" asp-controller="Home"
+                   style="font-size: 18px; padding: 10px 15px; display: inline-flex; align-items: center; gap: 6px; color: white; border-radius: 6px; text-decoration: none; margin-left: 12px;">
+                    <span class="material-icons" style="vertical-align: middle; margin-right: 6px; font-size: 24px;">logout</span>
+                    Logout
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="cut-container" style="padding-top: 30px;">
+        <div class="student-card-preview">
+            <h3 style="color: var(--cut-navy); margin-bottom: 30px;">
+                <span class="material-icons" style="vertical-align: middle; margin-right: 10px;">badge</span>
+                Student Card Preview
+            </h3>
+
+            @if (TempData["Message"] != null)
+            {
+                <div class="cut-alert cut-alert-success">
+                    @TempData["Message"]
+                </div>
+            }
+
+            <div class="preview-content">
+                <!-- Photo Section -->
+                <div class="photo-section">
+                    @if (Model.Photo != null && !string.IsNullOrEmpty(Model.Photo.PhotoUrl))
+                    {
+                        <img src="@Model.Photo.PhotoUrl" alt="Student Photo" />
+                    }
+                    else
+                    {
+                        <div class="no-photo">
+                            <span style="color:#999;font-size:16px;">No Photo Available</span>
+                        </div>
+                    }
+                </div>
+
+                <!-- Details Section -->
+                <div class="details-section">
+                    <div class="detail-item">
+                        <strong>Full Name</strong>
+                        <span>@Model.Photo?.FullName</span>
+                    </div>
+                    <div class="detail-item">
+                        <strong>Student Number</strong>
+                        <span>@Model.Photo?.StudentNumber</span>
+                    </div>
+                    <div class="detail-item">
+                        <strong>Course</strong>
+                        <span>@Model.Photo?.Course</span>
+                    </div>
+
+                    <!-- Approve Button with AJAX -->
+                    <form id="approveForm" method="post" style="margin-top: 30px;">
+                        <input type="hidden" name="studentNumber" value="@Model.Photo?.StudentNumber" />
+                        <button type="submit" class="cut-btn cut-btn-primary cut-btn-block">
+                            <span class="material-icons" style="vertical-align: middle; margin-right: 8px;">check_circle</span>
+                            Approve for Printing
+                        </button>
+                    </form>
+
+                    <div id="approveMessage" style="margin-top:15px;color:green;font-weight:bold;"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Email Notifications -->
+        @if (Model.Photo != null)
+        {
+            <div class="email-list">
+                <h3 style="color: var(--cut-navy); margin-bottom: 25px;">
+                    <span class="material-icons" style="vertical-align: middle; margin-right: 10px;">email</span>
+                    Send Email Notification
+                </h3>
+
+                <div class="email-item">
+                    <div class="email-item-info">
+                        <strong style="color: var(--cut-navy);">@Model.Photo.FullName</strong>
+                        <br />
+                        <span style="color: var(--cut-gray); font-size: 0.9rem;">
+                            @Model.Photo.StudentNumber - @Model.Photo.Email
+                        </span>
+                    </div>
+                  
+                        <a href="@Url.Action("SendPhotoIssueEmail", "Admin", new { studentNumber = Model.Photo.StudentNumber })" class="cut-btn cut-btn-primary btn-small">
+                            <span class="material-icons" style="vertical-align: middle; font-size: 16px; margin-right: 4px;">error</span>
+                            Photo Issue
+                        </a>
+                    </div>
+                </div>
+           
+        }
+    </div>
+
+    <!-- Footer -->
+    <div class="cut-footer">
+        <p>&copy; @DateTime.Now.Year Central University of Technology</p>
+        <p>Bloemfontein Campus | Admin Portal</p>
+    </div>
+
+    <!-- jQuery for AJAX -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#approveForm").submit(function(e) {
+                e.preventDefault(); // prevent full page postback
+
+                var studentNumber = $("input[name='studentNumber']").val();
+
+                $.ajax({
+                    url: '@Url.Action("ApproveForPrinting", "Admin")',
+                    type: 'POST',
+                    data: { studentNumber: studentNumber },
+                    success: function(response) {
+                        $("#approveMessage").text("✅ Student approved for printing successfully!");
+                    },
+                    error: function(xhr, status, error) {
+                        $("#approveMessage").text("⚠️ Error approving student. Try again.");
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

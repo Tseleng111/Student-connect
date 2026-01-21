@@ -1,0 +1,20 @@
+{
+  "Firebase": {
+    "AuthSecret": "AUTH SECRERT",
+    "BasePath": "NAME"
+
+  },
+  "SmtpSettings": {
+    "Server": "smtp.gmail.com",
+    "Port": 1234,
+    "User": "connecta@gmail.com",
+    "Password": "P12345"
+  },
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft.AspNetCore": "Warning"
+    }
+  },
+  "AllowedHosts": "*"
+}
