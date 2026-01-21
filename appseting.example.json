@@ -1,0 +1,10 @@
+{
+  "Firebase": {
+    "ApiKey": "YOUR_FIREBASE_API_KEY",
+    "AuthDomain": "YOUR_PROJECT_ID.firebaseapp.com",
+    "ProjectId": "YOUR_PROJECT_ID",
+    "StorageBucket": "YOUR_PROJECT_ID.appspot.com",
+    "MessagingSenderId": "YOUR_SENDER_ID",
+    "AppId": "YOUR_APP_ID"
+  }
+}
